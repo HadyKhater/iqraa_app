@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:iqraa_app/views/splash/splash_view.dart';
+import 'package:iqraa_app/views/chooseCountry/choose_country.dart';
 
 class IntroView extends StatefulWidget {
   const IntroView({super.key});
@@ -17,7 +17,7 @@ class _IntroViewState extends State<IntroView> {
     super.initState();
     Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const SplashView()),
+        MaterialPageRoute(builder: (context) => const ChooseCountry()),
       );
     });
   }
@@ -26,9 +26,10 @@ class _IntroViewState extends State<IntroView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: SvgPicture.asset('asstes/images/Logo.svg',
-        width:192.0.w,
-        height: 272.0.h,
+        child: SvgPicture.asset(
+          'asstes/images/Logo.svg',
+          width: 192.0.w,
+          height: 272.0.h,
         ),
       ),
     );
