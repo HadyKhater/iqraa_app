@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/Widget/custom_button.dart';
 import 'package:iqraa_app/Widget/custom_onboarding.dart';
 import 'package:iqraa_app/const/const.dart';
-import 'package:iqraa_app/views/Sign%20in/sign_in.dart';
+import 'package:iqraa_app/views/Sign%20in/sign_in_femail.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingView extends StatefulWidget {
@@ -23,7 +23,7 @@ class _OnboardingViewState extends State<OnboardingView> {
       );
     } else {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const SignInView()));
+          context, MaterialPageRoute(builder: (context) => const SignInFemailView()));
     }
   }
 

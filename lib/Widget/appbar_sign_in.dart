@@ -4,11 +4,12 @@ import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/const/const.dart';
 
 class AppBarSingIn extends StatelessWidget {
- const AppBarSingIn({super.key});
+  const AppBarSingIn({super.key});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      surfaceTintColor: Colors.white,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
