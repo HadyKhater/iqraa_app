@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_choose_country.dart';
-import 'package:iqraa_app/Widget/custom_onboarding.dart';
 import 'package:iqraa_app/views/onboarding/onboarding_view.dart';
 
 class ChooseCountry extends StatefulWidget {
@@ -87,7 +86,7 @@ class _ChooseCountryState extends State<ChooseCountry> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const CustomOnboarding()));
+                            builder: (context) => const OnboardingView()));
                     selectedCountryIndex = 2;
                   });
                 },
