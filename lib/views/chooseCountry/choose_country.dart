@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_choose_country.dart';
-import 'package:iqraa_app/views/splash/splash_view.dart';
+import 'package:iqraa_app/Widget/custom_onboarding.dart';
+import 'package:iqraa_app/views/onboarding/onboarding_view.dart';
 
 class ChooseCountry extends StatefulWidget {
   const ChooseCountry({super.key});
@@ -50,7 +51,7 @@ class _ChooseCountryState extends State<ChooseCountry> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const SplashView()));
+                            builder: (context) => const OnboardingView()));
                     selectedCountryIndex = 0;
                   });
                 },
@@ -68,7 +69,7 @@ class _ChooseCountryState extends State<ChooseCountry> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const SplashView()));
+                            builder: (context) => const OnboardingView()));
                     selectedCountryIndex = 1;
                   });
                 },
@@ -86,7 +87,7 @@ class _ChooseCountryState extends State<ChooseCountry> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const SplashView()));
+                            builder: (context) => const CustomOnboarding()));
                     selectedCountryIndex = 2;
                   });
                 },
