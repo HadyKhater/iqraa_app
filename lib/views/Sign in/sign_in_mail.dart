@@ -8,6 +8,8 @@ import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_button.dart';
 import 'package:iqraa_app/Widget/numbered_wheel_slider.dart';
 
+import 'choose_favorites.dart';
+
 class SignInMailView extends StatelessWidget {
   const SignInMailView({super.key});
 
@@ -16,7 +18,10 @@ class SignInMailView extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          const AppBarSingIn(),
+          AppBarSingIn(
+            text: '1/2',
+            width: 80.0.w,
+          ),
           SizedBox(
             height: 28.0.h,
           ),
@@ -65,7 +70,14 @@ class SignInMailView extends StatelessWidget {
           SizedBox(
             height: 36.0.h,
           ),
-          const CustomButton(title: 'التالي')
+          CustomButton(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ChooseFavorites()));
+              },
+              title: 'التالي')
         ],
       ),
     );

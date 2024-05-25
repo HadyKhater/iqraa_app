@@ -1,13 +1,12 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:iqraa_app/Widget/appbar_sign_in.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_button.dart';
 import 'package:iqraa_app/Widget/numbered_wheel_slider.dart';
-
+import 'package:iqraa_app/views/Sign%20in/choose_favorites.dart';
 import 'sign_in_mail.dart';
 
 class SignInFemailView extends StatelessWidget {
@@ -18,7 +17,10 @@ class SignInFemailView extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          const AppBarSingIn(),
+          AppBarSingIn(
+            text: '1/2',
+            width: 80.0.w,
+          ),
           SizedBox(
             height: 28.0.h,
           ),
@@ -69,7 +71,15 @@ class SignInFemailView extends StatelessWidget {
           SizedBox(
             height: 36.0.h,
           ),
-          const CustomButton(title: 'التالي')
+          CustomButton(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ChooseFavorites()));
+            },
+            title: 'التالي',
+          )
         ],
       ),
     );
