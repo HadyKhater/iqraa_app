@@ -4,7 +4,9 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/Widget/appbar_sign_in.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
+import 'package:iqraa_app/Widget/custom_button.dart';
 import 'package:iqraa_app/Widget/custom_choose_favorite.dart';
+import 'package:iqraa_app/views/Sign%20in/choose_sign_in.dart';
 
 class ChooseFavorites extends StatefulWidget {
   const ChooseFavorites({super.key});
@@ -39,7 +41,7 @@ class _ChooseFavoritesState extends State<ChooseFavorites> {
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 26.4.w),
               child: GridView.builder(
-                gridDelegate:const SliverGridDelegateWithFixedCrossAxisCount(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
                   childAspectRatio: 1 / 1.45,
                   crossAxisSpacing: 20.0,
@@ -49,6 +51,17 @@ class _ChooseFavoritesState extends State<ChooseFavorites> {
                 itemCount: 50,
               ),
             ),
+          ),
+          CustomButton(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ChooseSignInView()));
+              },
+              title: 'التالي'),
+          SizedBox(
+            height: 20.0.h ,
           ),
         ],
       ),
