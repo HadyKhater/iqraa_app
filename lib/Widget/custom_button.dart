@@ -6,8 +6,8 @@ import 'custom_Text.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key, required this.title, this.onTap});
-final String title;
-final void Function()? onTap;
+  final String title;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -15,7 +15,7 @@ final void Function()? onTap;
       child: GestureDetector(
         onTap: onTap,
         child: Container(
-          width: double.infinity,
+          width: 380.0.w,
           height: 58.0.h,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(100.0.r),

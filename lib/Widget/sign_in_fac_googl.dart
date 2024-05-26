@@ -20,7 +20,7 @@ class SignInFacAndGoogle extends StatelessWidget {
       child: Directionality(
         textDirection: TextDirection.rtl,
         child: Padding(
-          padding: EdgeInsets.only(right: 20.0.w),
+          padding: EdgeInsets.only(right: 40.0.w),
           child: Row(
             children: [
               SvgPicture.asset(image),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_choose_country.dart';
+import 'package:iqraa_app/const/const.dart';
 import 'package:iqraa_app/views/onboarding/onboarding_view.dart';
 
 class ChooseCountry extends StatefulWidget {
@@ -47,10 +48,49 @@ class _ChooseCountryState extends State<ChooseCountry> {
                 isSelected: selectedCountryIndex == 0,
                 onChanged: () {
                   setState(() {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const OnboardingView()));
+                    showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          backgroundColor: kPrimaryColor,
+                          title: CustomText(
+                              textAlign: TextAlign.center,
+                              title: 'مصر',
+                              fontSize: 18.0.sp,
+                              fontWeight: FontWeight.w700,
+                              colorText: Colors.white),
+                          // content:  Text("This is the dialog content."),
+                          actions: [
+                            ElevatedButton(
+                              onPressed: Navigator.of(context).pop,
+                              child: CustomText(
+                                  title: 'الغاء',
+                                  fontSize: 12.0.sp,
+                                  fontWeight: FontWeight.w600,
+                                  colorText: Colors.black),
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const OnboardingView()));
+                              },
+                              child: CustomText(
+                                  title: 'تمام',
+                                  fontSize: 12.0.sp,
+                                  fontWeight: FontWeight.w600,
+                                  colorText: Colors.black),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                    // Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //         builder: (context) => const OnboardingView()));
                     selectedCountryIndex = 0;
                   });
                 },
@@ -65,10 +105,49 @@ class _ChooseCountryState extends State<ChooseCountry> {
                 isSelected: selectedCountryIndex == 1,
                 onChanged: () {
                   setState(() {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const OnboardingView()));
+                    showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          backgroundColor: kPrimaryColor,
+                          title: CustomText(
+                              textAlign: TextAlign.center,
+                              title: 'السعوديه',
+                              fontSize: 18.0.sp,
+                              fontWeight: FontWeight.w700,
+                              colorText: Colors.white),
+                          // content:  Text("This is the dialog content."),
+                          actions: [
+                            ElevatedButton(
+                              onPressed: Navigator.of(context).pop,
+                              child: CustomText(
+                                  title: 'الغاء',
+                                  fontSize: 12.0.sp,
+                                  fontWeight: FontWeight.w600,
+                                  colorText: Colors.black),
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const OnboardingView()));
+                              },
+                              child: CustomText(
+                                  title: 'تمام',
+                                  fontSize: 12.0.sp,
+                                  fontWeight: FontWeight.w600,
+                                  colorText: Colors.black),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                    // Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //         builder: (context) => const OnboardingView()));
                     selectedCountryIndex = 1;
                   });
                 },
@@ -83,10 +162,49 @@ class _ChooseCountryState extends State<ChooseCountry> {
                 isSelected: selectedCountryIndex == 2,
                 onChanged: () {
                   setState(() {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const OnboardingView()));
+                    showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          backgroundColor: kPrimaryColor,
+                          title: CustomText(
+                              textAlign: TextAlign.center,
+                              title: 'الامارات',
+                              fontSize: 18.0.sp,
+                              fontWeight: FontWeight.w700,
+                              colorText: Colors.white),
+                          // content:  Text("This is the dialog content."),
+                          actions: [
+                            ElevatedButton(
+                              onPressed: Navigator.of(context).pop,
+                              child: CustomText(
+                                  title: 'الغاء',
+                                  fontSize: 12.0.sp,
+                                  fontWeight: FontWeight.w600,
+                                  colorText: Colors.black),
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const OnboardingView()));
+                              },
+                              child: CustomText(
+                                  title: 'تمام',
+                                  fontSize: 12.0.sp,
+                                  fontWeight: FontWeight.w600,
+                                  colorText: Colors.black),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                    // Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //         builder: (context) => const OnboardingView()));
                     selectedCountryIndex = 2;
                   });
                 },
