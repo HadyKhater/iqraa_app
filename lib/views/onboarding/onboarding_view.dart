@@ -22,8 +22,8 @@ class _OnboardingViewState extends State<OnboardingView> {
         curve: Curves.easeInOut,
       );
     } else {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const SignInFemailView()));
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const SignInFemailView()));
     }
   }
 
@@ -59,7 +59,7 @@ class _OnboardingViewState extends State<OnboardingView> {
                       dotHeight: 8.0.h,
                       dotWidth: 25.0.w,
                       activeDotColor: kPrimaryColor,
-                      dotColor: Colors.white,
+                      dotColor: Colors.grey.withOpacity(0.4),
                     ),
                   ),
                   SizedBox(height: 60.h),
