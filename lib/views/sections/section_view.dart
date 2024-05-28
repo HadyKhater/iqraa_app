@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_app_bar_section.dart';
 import 'package:iqraa_app/Widget/custom_choose_favorite.dart';
-import 'package:iqraa_app/const/const.dart';
-import 'package:iqraa_app/views/home/home_view.dart';
 import 'package:iqraa_app/views/my_diary/my_diary_view.dart';
 
 class SectionView extends StatefulWidget {

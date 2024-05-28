@@ -1,13 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_app_bar_my_library.dart';
 import 'package:iqraa_app/Widget/custom_categories_home.dart';
 import 'package:iqraa_app/Widget/custom_details.dart';
-import 'package:iqraa_app/const/const.dart';
 
 class MyOfficeView extends StatelessWidget {
   const MyOfficeView({super.key});

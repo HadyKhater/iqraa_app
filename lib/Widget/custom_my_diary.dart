@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:iqraa_app/const/const.dart';
@@ -47,7 +45,7 @@ class CustomMyDiary extends StatelessWidget {
               height: 24.0.h,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(6.0.r),
-                color: Color(0xffD3D7E3),
+                color: const Color(0xffD3D7E3),
               ),
               child: Center(
                 child: CustomText(

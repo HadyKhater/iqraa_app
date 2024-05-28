@@ -14,17 +14,21 @@ class CustomAppBarMyLibrary extends StatelessWidget {
       textDirection: TextDirection.rtl,
       child: Row(
         children: [
-          const Icon(Icons.arrow_back),
-          SizedBox(
-            width: 16.0.w,
-          ),
+          IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: const Icon(Icons.arrow_back)),
+          // SizedBox(
+          //   width: 16.0.w,
+          // ),
           CustomText(
               title: 'مكتبتى',
               fontSize: 24.0.sp,
               fontWeight: FontWeight.w700,
               colorText: kSecondColor),
           SizedBox(
-            width: 110.0.w,
+            width: 100.0.w,
           ),
           SvgPicture.asset('asstes/icons/search.svg'),
           SizedBox(
