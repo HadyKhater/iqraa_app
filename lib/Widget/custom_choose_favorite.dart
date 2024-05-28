@@ -6,8 +6,11 @@ import 'package:iqraa_app/const/const.dart';
 import 'custom_Text.dart';
 
 class CustomChooseFavorite extends StatefulWidget {
-  const CustomChooseFavorite({super.key});
-
+  const CustomChooseFavorite({
+    super.key,
+    this.onTap,
+  });
+  final void Function()? onTap;
   @override
   State<CustomChooseFavorite> createState() => _CustomChooseFavoriteState();
 }
@@ -23,7 +26,12 @@ class _CustomChooseFavoriteState extends State<CustomChooseFavorite> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: toggleSelection,
+      onTap: () {
+        toggleSelection();
+        if (widget.onTap != null) {
+          widget.onTap!();
+        }
+      },
       child: Container(
         width: 98.0.w,
         height: 120.0.h,

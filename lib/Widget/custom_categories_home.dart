@@ -3,14 +3,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/const/const.dart';
 
-class CustomCategoriesHome extends StatefulWidget {
-  const CustomCategoriesHome({super.key});
-
+class CustomCategoriesItem extends StatefulWidget {
+  const CustomCategoriesItem({super.key, required this.text});  
+  final String text;
   @override
-  State<CustomCategoriesHome> createState() => _CustomCategoriesHomeState();
+  State<CustomCategoriesItem> createState() => _CustomCategoriesItemState();
 }
 
-class _CustomCategoriesHomeState extends State<CustomCategoriesHome> {
+class _CustomCategoriesItemState extends State<CustomCategoriesItem> {
   bool isSelected = false;
   void changeSelected() {
     isSelected = !isSelected;
@@ -40,7 +40,7 @@ class _CustomCategoriesHomeState extends State<CustomCategoriesHome> {
             child: Align(
               alignment: Alignment.center,
               child: CustomText(
-                  title: 'الكل',
+                  title:widget.text,
                   fontSize: 16.0.sp,
                   fontWeight: FontWeight.w600,
                   colorText: isSelected ? Colors.white : kPrimaryColor),

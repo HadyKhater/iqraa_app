@@ -79,7 +79,9 @@ class HomeView extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       shrinkWrap: true,
                       itemBuilder: (context, index) =>
-                          const CustomCategoriesHome(),
+                          const CustomCategoriesItem(
+                            text: 'الكل',
+                          ),
                       separatorBuilder: (context, index) => SizedBox(
                             width: 10.0.w,
                           ),
