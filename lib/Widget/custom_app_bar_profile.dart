@@ -26,9 +26,6 @@ class CustomAppBarProfile extends StatelessWidget {
             fontWeight: FontWeight.w700,
             colorText: kSecondColor),
         Spacer(),
-        // SizedBox(
-        //   width: 156.w,
-        // ),
         SvgPicture.asset('asstes/icons/More Circle1.svg')
       ],
     );

@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_app_bar_profile.dart';
 import 'package:iqraa_app/Widget/custom_profile_image.dart';
 import 'package:iqraa_app/Widget/custom_setting.dart';
-import 'package:iqraa_app/const/const.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
@@ -41,7 +37,6 @@ class ProfileView extends StatelessWidget {
               const CustomSetting(
                 title: 'الاشعارات',
                 image: 'asstes/icons/Notification2.svg',
-                // icon: Icons.arrow_forward_ios_rounded,
                 isSwitched: true,
               ),
               SizedBox(
@@ -50,7 +45,6 @@ class ProfileView extends StatelessWidget {
               const CustomSetting(
                 title: 'الوضع المظلم',
                 image: 'asstes/icons/Show1.svg',
-                // icon: Icons.arrow_forward_ios_rounded,
                 isSwitched: true,
               ),
               SizedBox(

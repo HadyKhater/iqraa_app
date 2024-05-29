@@ -4,8 +4,9 @@ import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/const/const.dart';
 
 class CustomCategoriesItem extends StatefulWidget {
-  const CustomCategoriesItem({super.key, required this.text});  
+  const CustomCategoriesItem({super.key, required this.text, this.width});
   final String text;
+  final double? width;
   @override
   State<CustomCategoriesItem> createState() => _CustomCategoriesItemState();
 }
@@ -28,7 +29,7 @@ class _CustomCategoriesItemState extends State<CustomCategoriesItem> {
             });
           },
           child: Container(
-            width: 95.0.w,
+            width: widget.width ?? 95.0.w,
             height: 38.0.h,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(100),
@@ -40,7 +41,7 @@ class _CustomCategoriesItemState extends State<CustomCategoriesItem> {
             child: Align(
               alignment: Alignment.center,
               child: CustomText(
-                  title:widget.text,
+                  title: widget.text,
                   fontSize: 16.0.sp,
                   fontWeight: FontWeight.w600,
                   colorText: isSelected ? Colors.white : kPrimaryColor),

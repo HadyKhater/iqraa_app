@@ -37,16 +37,24 @@ class _LayOutViewState extends State<LayOutView> {
                   currentIndex: cubit.currentIndex,
                   items: <BottomNavigationBarItem>[
                     BottomNavigationBarItem(
-                        icon: SvgPicture.asset('asstes/icons/Home.svg'),
+                        icon: SvgPicture.asset(cubit.currentIndex == 0
+                            ? 'asstes/icons/Home.svg'
+                            : 'asstes/icons/home_kseco.svg'),
                         label: 'حسابي'),
                     BottomNavigationBarItem(
-                        icon: SvgPicture.asset('asstes/icons/Category.svg'),
+                        icon: SvgPicture.asset(cubit.currentIndex == 1
+                            ? 'asstes/icons/Category_kprim.svg'
+                            : 'asstes/icons/Category.svg'),
                         label: 'الاقسام'),
                     BottomNavigationBarItem(
-                        icon: SvgPicture.asset('asstes/icons/book.svg'),
+                        icon: SvgPicture.asset(cubit.currentIndex == 2
+                            ? 'asstes/icons/book_kprim.svg'
+                            : 'asstes/icons/book.svg'),
                         label: 'مكتبتي'),
                     BottomNavigationBarItem(
-                        icon: SvgPicture.asset('asstes/icons/person.svg'),
+                        icon: SvgPicture.asset(cubit.currentIndex == 3
+                            ? 'asstes/icons/person_kprim.svg'
+                            : 'asstes/icons/person.svg'),
                         label: 'شخصي'),
                   ],
                 ),

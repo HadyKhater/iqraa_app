@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/Widget/custom_app_bar_home.dart';
 import 'package:iqraa_app/Widget/custom_body_home.dart';
-
+import 'package:iqraa_app/Widget/custom_bottom_sheet.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -23,11 +23,21 @@ class HomeView extends StatelessWidget {
               ),
 
               ///AppBar
-              const CustomAppBarHome(),
+              CustomAppBarHome(
+                onTap: () {
+                  showModalBottomSheet(
+                    backgroundColor: Colors.white,
+                    context: (context),
+                    builder: (context) {
+                      return CustomBottomSheet();
+                    },
+                  );
+                },
+              ),
               SizedBox(
                 height: 24.0.h,
               ),
-              
+
               const Expanded(child: CustomBodyHom()),
             ],
           ),
@@ -36,4 +46,3 @@ class HomeView extends StatelessWidget {
     );
   }
 }
-
