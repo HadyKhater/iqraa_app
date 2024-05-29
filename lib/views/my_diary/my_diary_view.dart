@@ -13,6 +13,7 @@ class MyDiary extends StatelessWidget {
       textDirection: TextDirection.rtl,
       child: Scaffold(
           appBar: AppBar(
+            surfaceTintColor: Colors.white,
             title: CustomText(
                 title: 'مذكرات',
                 fontSize: 24.0.sp,
