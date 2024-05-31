@@ -19,25 +19,8 @@ class HomeView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 50.0.h,
+                height: 33.0.h,
               ),
-
-              ///AppBar
-              CustomAppBarHome(
-                onTap: () {
-                  showModalBottomSheet(
-                    backgroundColor: Colors.white,
-                    context: (context),
-                    builder: (context) {
-                      return CustomBottomSheet();
-                    },
-                  );
-                },
-              ),
-              SizedBox(
-                height: 24.0.h,
-              ),
-
               const Expanded(child: CustomBodyHom()),
             ],
           ),

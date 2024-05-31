@@ -39,7 +39,6 @@ class SelectableItem extends StatelessWidget {
               color: isSelected ? kPrimaryColor : Colors.transparent,
             ),
           ),
-          // if (isSelected) content ?? const SizedBox.shrink(),
         ],
       ),
     );

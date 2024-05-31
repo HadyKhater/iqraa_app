@@ -1,12 +1,14 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
+import 'package:iqraa_app/views/researchView/research_view.dart';
 
 class CustomAppBarHome extends StatelessWidget {
   const CustomAppBarHome({super.key, this.onTap});
-final void Function()? onTap;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -20,7 +22,10 @@ final void Function()? onTap;
           width: 16.0.w,
         ),
         GestureDetector(
-          onTap:onTap,
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const ResearchView()));
+          },
           child: Container(
             width: 200.0.w,
             height: 44.0.h,
@@ -46,7 +51,9 @@ final void Function()? onTap;
                     colorText: const Color(0xffBDBDBD),
                   ),
                   const Spacer(),
-                  SvgPicture.asset('asstes/icons/Filter.svg'),
+                  GestureDetector(
+                      onTap: onTap,
+                      child: SvgPicture.asset('asstes/icons/Filter.svg')),
                 ],
               ),
             ),

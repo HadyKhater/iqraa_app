@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:iqraa_app/Widget/custom_name_author.dart';
 import 'package:iqraa_app/const/const.dart';
 
 import 'custom_Text.dart';
+import 'custom_bottom_sheet.dart';
 import 'custom_categories_home.dart';
 import 'custom_text_filed_search.dart';
 
@@ -21,6 +25,19 @@ class CustomBodyResearch extends StatelessWidget {
           hintText: 'بحث',
           onChanged: (value) {
             print('Search query:$value');
+          },
+          onTap: () {
+            showModalBottomSheet(
+              backgroundColor: Colors.white,
+              context: (context),
+              builder: (context) {
+                return CustomBottomSheet(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                );
+              },
+            );
           },
         ),
         SizedBox(
@@ -67,8 +84,15 @@ class CustomBodyResearch extends StatelessWidget {
                 colorText: kPrimaryColor),
           ],
         ),
-        SizedBox(
-          height: 24.0.h,
+        Expanded(
+          child: ListView.separated(
+              scrollDirection: Axis.vertical,
+              shrinkWrap: true,
+              itemBuilder: (context, index) => const CustomNameAuthor(),
+              separatorBuilder: (context, index) => SizedBox(
+                    height: 24.0.h,
+                  ),
+              itemCount: 6),
         ),
       ],
     );

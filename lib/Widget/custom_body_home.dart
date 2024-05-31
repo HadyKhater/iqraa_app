@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/views/details_view/details_view.dart';
+import 'package:iqraa_app/views/researchView/research_view.dart';
 
+import 'custom_app_bar_home.dart';
 import 'custom_book_authors.dart';
+import 'custom_bottom_sheet.dart';
 import 'custom_card_discount.dart';
 import 'custom_categories_home.dart';
 import 'custom_details.dart';
@@ -16,7 +19,29 @@ class CustomBodyHom extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.vertical,
       child: Column(
+        ///AppBar
         children: [
+          CustomAppBarHome(
+            onTap: () {
+              showModalBottomSheet(
+                backgroundColor: Colors.white,
+                context: (context),
+                builder: (context) {
+                  return CustomBottomSheet(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ResearchView()));
+                    },
+                  );
+                },
+              );
+            },
+          ),
+          SizedBox(
+            height: 20.0.h,
+          ),
           //Card Discount
           const CustomCardDiscount(),
 
