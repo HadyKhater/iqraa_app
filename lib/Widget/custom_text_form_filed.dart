@@ -7,13 +7,13 @@ class CustomTextFormFiled extends StatelessWidget {
     required this.hint,
     this.maxlines = 1,
     this.onSave,
-    required this.iconDataPrefx,
+    this.iconDataPrefx,
     this.iconDataSufx,
     this.type,
   });
   final String hint;
   final int maxlines;
-  final IconData iconDataPrefx;
+  final IconData? iconDataPrefx;
   final IconData? iconDataSufx;
   final void Function(String?)? onSave;
   final TextInputType? type;
