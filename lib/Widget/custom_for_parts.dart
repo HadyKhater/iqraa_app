@@ -16,7 +16,7 @@ class CustomForParts extends StatelessWidget {
           all: '15 فصل',
         ),
         SizedBox(
-          height: 170.0.h,
+          height: 250.0.h,
           child: ListView.separated(
               scrollDirection: Axis.vertical,
               shrinkWrap: true,

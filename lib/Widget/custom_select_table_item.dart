@@ -7,14 +7,12 @@ class SelectableItem extends StatelessWidget {
   final String title;
   final bool isSelected;
   final void Function()? onTap;
-  final Widget? content;
 
   const SelectableItem({
     Key? key,
     required this.title,
     required this.isSelected,
     this.onTap,
-    this.content,
   }) : super(key: key);
 
   @override
@@ -22,7 +20,7 @@ class SelectableItem extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           CustomText(
             title: title,
@@ -41,7 +39,7 @@ class SelectableItem extends StatelessWidget {
               color: isSelected ? kPrimaryColor : Colors.transparent,
             ),
           ),
-          if (isSelected) content ?? const SizedBox.shrink(),
+          // if (isSelected) content ?? const SizedBox.shrink(),
         ],
       ),
     );

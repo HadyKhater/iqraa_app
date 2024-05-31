@@ -12,15 +12,15 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 16.0.w),
-      child: GestureDetector(
-        onTap: onTap,
-        child: Container(
-          width: 380.0.w,
-          height: 58.0.h,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(100.0.r),
-            color: kPrimaryColor,
-          ),
+      child: Container(
+        width: 380.0.w,
+        height: 58.0.h,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(100.0.r),
+          color: kPrimaryColor,
+        ),
+        child: MaterialButton(
+          onPressed: onTap,
           child: Align(
             alignment: Alignment.center,
             child: CustomText(

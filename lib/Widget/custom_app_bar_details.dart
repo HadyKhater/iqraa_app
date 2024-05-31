@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:iqraa_app/const/const.dart';
-
 import 'custom_Text.dart';
+import 'custom_contaner_my_diary.dart';
 
 class CustomAppBarDetails extends StatelessWidget {
   const CustomAppBarDetails({super.key});
@@ -12,10 +13,19 @@ class CustomAppBarDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset(
-          'asstes/images/Rectangle 827.png',
-          width: 428.0.w,
-          height: 178.0.h,
+        AspectRatio(
+          aspectRatio: 428 / 300,
+          child: Opacity(
+            opacity: 0.15,
+            child: Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('asstes/images/327297.jpg'),
+                    alignment: FractionalOffset.topCenter,
+                    fit: BoxFit.fitWidth),
+              ),
+            ),
+          ),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -38,16 +48,11 @@ class CustomAppBarDetails extends StatelessWidget {
           ],
         ),
         Positioned(
-          top: 85.0.h,
+          top: 140.0.h,
           left: 0.0.w,
-          right: 90.0.w,
+          right: 240.0.w,
           child: Row(
             children: [
-              Image.asset(
-                'asstes/images/Rectangle 1 (1).png',
-                width: 140.0.w,
-                height: 100.0.h,
-              ),
               Column(
                 children: [
                   SvgPicture.asset('asstes/icons/Fill 1.svg'),
@@ -57,12 +62,13 @@ class CustomAppBarDetails extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                       colorText: const Color(0xff424242)),
                   CustomText(
-                      title: '(100 تقييم)',
-                      fontSize: 16.0.sp,
-                      fontWeight: FontWeight.w500,
-                      colorText: const Color(0xff424242)),
+                    title: '(100 تقييم)',
+                    fontSize: 16.0.sp,
+                    fontWeight: FontWeight.w500,
+                    colorText: const Color(0xff424242),
+                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),

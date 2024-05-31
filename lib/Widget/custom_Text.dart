@@ -20,8 +20,11 @@ class CustomText extends StatelessWidget {
       child: Text(
         textAlign: textAlign,
         title,
+
         style: TextStyle(
+      
           fontSize: fontSize,
+          
           fontWeight: fontWeight,
           color: colorText,
         ),

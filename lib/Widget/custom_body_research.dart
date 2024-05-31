@@ -12,66 +12,65 @@ class CustomBodyResearch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                height: 50.0.h,
-              ),
-              CustomTextFiledSearch(
-                hintText: 'بحث',
-                onChanged: (value) {
-                  print('Search query:$value');
-                },
-              ),
-              SizedBox(
-                height: 24.0.h,
-              ),
-              Row(
-                children: [
-                  CustomCategoriesItem(
-                    text: 'كاتب',
-                    width: 150.0.w,
-                  ),
-                  SizedBox(
-                    width: 12.0.w,
-                  ),
-                  CustomCategoriesItem(
-                    text: 'كتابي',
-                    width: 150.0.w,
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 24.0.h,
-              ),
-              Row(
-                children: [
-                  CustomText(
-                      title: 'نتائج بها',
-                      fontSize: 20.0.sp,
-                      fontWeight: FontWeight.w700,
-                      colorText: kSecondColor),
-                  SizedBox(
-                    width: 5.0.w,
-                  ),
-                  CustomText(
-                      title: '“طه”',
-                      fontSize: 20.0.sp,
-                      fontWeight: FontWeight.w700,
-                      colorText: kPrimaryColor),
-                  Spacer(),
-                  CustomText(
-                      title: '2 كاتب',
-                      fontSize: 16.0.sp,
-                      fontWeight: FontWeight.w700,
-                      colorText: kPrimaryColor),
-                ],
-              ),
-              SizedBox(
-                height: 24.0.h,
-              ),
-              
-            ],
-          );
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SizedBox(
+          height: 50.0.h,
+        ),
+        CustomTextFiledSearch(
+          hintText: 'بحث',
+          onChanged: (value) {
+            print('Search query:$value');
+          },
+        ),
+        SizedBox(
+          height: 24.0.h,
+        ),
+        Row(
+          children: [
+            CustomCategoriesItem(
+              text: 'كاتب',
+              width: 150.0.w,
+            ),
+            SizedBox(
+              width: 12.0.w,
+            ),
+            CustomCategoriesItem(
+              text: 'كتابي',
+              width: 150.0.w,
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 24.0.h,
+        ),
+        Row(
+          children: [
+            CustomText(
+                title: 'نتائج بها',
+                fontSize: 20.0.sp,
+                fontWeight: FontWeight.w700,
+                colorText: kSecondColor),
+            SizedBox(
+              width: 5.0.w,
+            ),
+            CustomText(
+                title: '“طه”',
+                fontSize: 20.0.sp,
+                fontWeight: FontWeight.w700,
+                colorText: kPrimaryColor),
+            const Spacer(),
+            CustomText(
+                title: '2 كاتب',
+                fontSize: 16.0.sp,
+                fontWeight: FontWeight.w700,
+                colorText: kPrimaryColor),
+          ],
+        ),
+        SizedBox(
+          height: 24.0.h,
+        ),
+      ],
+    );
   }
 }
