@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_all_book_app_bar.dart';
 import 'package:iqraa_app/Widget/custom_name_author.dart';
-import 'package:iqraa_app/const/const.dart';
 
 class AllBookView extends StatelessWidget {
   const AllBookView({super.key});

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/const/const.dart';
-
 import 'custom_Text.dart';
 import 'custom_rate_defult.dart';
-import 'custom_rate_item.dart';
 import 'custom_rate_item_list.dart';
 
 class CustomComments extends StatelessWidget {

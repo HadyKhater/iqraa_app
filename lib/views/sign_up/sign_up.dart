@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
@@ -30,7 +29,7 @@ class SignUpView extends StatelessWidget {
         children: [
           Stack(
             children: [
-              CircleAvatar(),
+              const CircleAvatar(),
               SvgPicture.asset('asstes/icons/Ellipse.svg'),
               Container(
                 width: 16.0.w,

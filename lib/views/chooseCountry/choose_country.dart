@@ -87,10 +87,6 @@ class _ChooseCountryState extends State<ChooseCountry> {
                         );
                       },
                     );
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //         builder: (context) => const OnboardingView()));
                     selectedCountryIndex = 0;
                   });
                 },
@@ -116,7 +112,6 @@ class _ChooseCountryState extends State<ChooseCountry> {
                               fontSize: 18.0.sp,
                               fontWeight: FontWeight.w700,
                               colorText: Colors.white),
-                          // content:  Text("This is the dialog content."),
                           actions: [
                             ElevatedButton(
                               onPressed: Navigator.of(context).pop,
@@ -144,10 +139,6 @@ class _ChooseCountryState extends State<ChooseCountry> {
                         );
                       },
                     );
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //         builder: (context) => const OnboardingView()));
                     selectedCountryIndex = 1;
                   });
                 },
@@ -201,10 +192,6 @@ class _ChooseCountryState extends State<ChooseCountry> {
                         );
                       },
                     );
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //         builder: (context) => const OnboardingView()));
                     selectedCountryIndex = 2;
                   });
                 },

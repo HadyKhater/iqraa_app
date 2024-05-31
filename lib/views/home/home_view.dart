@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:iqraa_app/Widget/custom_app_bar_home.dart';
 import 'package:iqraa_app/Widget/custom_body_home.dart';
-import 'package:iqraa_app/Widget/custom_bottom_sheet.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

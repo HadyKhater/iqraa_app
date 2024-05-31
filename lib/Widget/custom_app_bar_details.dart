@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:iqraa_app/const/const.dart';
 import 'custom_Text.dart';
-import 'custom_contaner_my_diary.dart';
 
 class CustomAppBarDetails extends StatelessWidget {
   const CustomAppBarDetails({super.key});

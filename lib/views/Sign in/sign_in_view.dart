@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/Widget/Custom_Row_Forget_Password.dart';
 import 'package:iqraa_app/Widget/Custom_Row_Icon_Facbook_And_Google.dart';
-import 'package:iqraa_app/Widget/Navigate_Mobil_And_Email.dart';
 import 'package:iqraa_app/Widget/create_account.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_button.dart';
@@ -59,7 +58,6 @@ class _SignInViewState extends State<SignInView> {
                   width: 327.0.w,
                   height: 56.0.h,
                   decoration: BoxDecoration(
-                    // border: Border.all(color: const Color(0xffFAFAFA)),
                     borderRadius: BorderRadius.circular(8.0.r),
                     color: Color(0xffFAFAFA),
                   ),
@@ -74,7 +72,6 @@ class _SignInViewState extends State<SignInView> {
                           width: 152.0.w,
                           height: 48.0.h,
                           decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.white),
                             borderRadius: BorderRadius.circular(16.0.r),
                             color: isEmailSelected
                                 ? Colors.white
@@ -105,7 +102,6 @@ class _SignInViewState extends State<SignInView> {
                           width: 152.0.w,
                           height: 48.0.h,
                           decoration: BoxDecoration(
-                              // border: Border.all(color: Colors.white),
                               borderRadius: BorderRadius.circular(16.0.r),
                               color: isEmailSelected
                                   ? Colors.transparent
