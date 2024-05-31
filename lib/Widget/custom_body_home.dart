@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:iqraa_app/views/all_book_view/all_book_view.dart';
 import 'package:iqraa_app/views/details_view/details_view.dart';
+import 'package:iqraa_app/views/my_diary/my_diary_view.dart';
 import 'package:iqraa_app/views/researchView/research_view.dart';
 
 import 'custom_app_bar_home.dart';
@@ -52,7 +54,14 @@ class CustomBodyHom extends StatelessWidget {
           RowAll(
             title: 'الكتاب',
             all: 'الكل',
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AllBookView(),
+                ),
+              );
+            },
           ),
           SizedBox(
             height: 24.0.h,
@@ -73,7 +82,10 @@ class CustomBodyHom extends StatelessWidget {
           RowAll(
             title: 'التصنيفات',
             all: 'الكل',
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const MyDiary()));
+            },
           ),
           SizedBox(
             height: 10.0.h,

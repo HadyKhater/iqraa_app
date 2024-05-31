@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:iqraa_app/Widget/about_the_writer.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_app_bar_details.dart';
@@ -9,8 +7,6 @@ import 'package:iqraa_app/Widget/custom_button.dart';
 import 'package:iqraa_app/Widget/custom_comments.dart';
 import 'package:iqraa_app/Widget/custom_contaner_my_diary.dart';
 import 'package:iqraa_app/Widget/custom_for_parts.dart';
-import 'package:iqraa_app/Widget/custom_rate_item.dart';
-import 'package:iqraa_app/Widget/custom_rate_item_list.dart';
 import 'package:iqraa_app/Widget/custom_select_table_item.dart';
 import 'package:iqraa_app/const/const.dart';
 
