@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/Widget/custom_app_bar_profile.dart';
+import 'package:iqraa_app/Widget/custom_log_out_show_bottom_sheet.dart';
 import 'package:iqraa_app/Widget/custom_profile_image.dart';
 import 'package:iqraa_app/Widget/custom_setting.dart';
 
@@ -71,10 +72,22 @@ class ProfileView extends StatelessWidget {
               SizedBox(
                 height: 20.0.h,
               ),
-              const CustomSetting(
-                title: 'تسجيل الخروج',
-                color: Color(0xffF75555),
-                image: 'asstes/icons/Logout.svg',
+              GestureDetector(
+                onTap: () {
+                  showModalBottomSheet(
+                    isScrollControlled: false,
+                    backgroundColor: Colors.white,
+                    context: (context),
+                    builder: (context) {
+                      return const CustomLogOutShowBottomSheet();
+                    },
+                  );
+                },
+                child: const CustomSetting(
+                  title: 'تسجيل الخروج',
+                  color: Color(0xffF75555),
+                  image: 'asstes/icons/Logout.svg',
+                ),
               ),
             ],
           ),

@@ -1,13 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_app_bar.dart';
-import 'package:iqraa_app/Widget/custom_body_notification.dart';
 import 'package:iqraa_app/Widget/list_custom_item_notification.dart';
-import 'package:iqraa_app/const/const.dart';
 
 class NotificationView extends StatelessWidget {
   const NotificationView({super.key});
