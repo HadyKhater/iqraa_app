@@ -19,9 +19,6 @@ class CustomAppBarMyLibrary extends StatelessWidget {
                 Navigator.pop(context);
               },
               icon: const Icon(Icons.arrow_back)),
-          // SizedBox(
-          //   width: 16.0.w,
-          // ),
           CustomText(
               title: 'مكتبتى',
               fontSize: 24.0.sp,

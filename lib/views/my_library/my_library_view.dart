@@ -4,8 +4,8 @@ import 'package:iqraa_app/Widget/custom_app_bar_my_library.dart';
 import 'package:iqraa_app/Widget/custom_categories_home.dart';
 import 'package:iqraa_app/Widget/custom_details.dart';
 
-class MyOfficeView extends StatelessWidget {
-  const MyOfficeView({super.key});
+class MyLibraryView extends StatelessWidget {
+  const MyLibraryView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class MyOfficeView extends StatelessWidget {
                         height: 24.0.h,
                       ),
                   itemCount: 5),
-            )
+            ),
           ],
         ),
       ),

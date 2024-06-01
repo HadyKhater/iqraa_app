@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iqraa_app/views/all_book_view/all_book_view.dart';
+import 'package:iqraa_app/views/author_details/author_details.dart';
 import 'package:iqraa_app/views/details_view/details_view.dart';
 import 'package:iqraa_app/views/my_diary/my_diary_view.dart';
 import 'package:iqraa_app/views/researchView/research_view.dart';
@@ -69,14 +70,22 @@ class CustomBodyHom extends StatelessWidget {
           //Book authors
           SizedBox(
             height: 124,
-            child: ListView.separated(
-                scrollDirection: Axis.horizontal,
-                shrinkWrap: true,
-                itemBuilder: (context, index) => const CustomBookAuthors(),
-                separatorBuilder: (context, index) => SizedBox(
-                      width: 10.0.w,
-                    ),
-                itemCount: 10),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const AuthorDetails()));
+              },
+              child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  shrinkWrap: true,
+                  itemBuilder: (context, index) => const CustomBookAuthors(),
+                  separatorBuilder: (context, index) => SizedBox(
+                        width: 10.0.w,
+                      ),
+                  itemCount: 10),
+            ),
           ),
 
           RowAll(
