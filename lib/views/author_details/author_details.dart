@@ -4,7 +4,6 @@ import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_about_the_writer.dart';
 import 'package:iqraa_app/Widget/custom_app_bar_author_details.dart';
 import 'package:iqraa_app/Widget/custom_book.dart';
-import 'package:iqraa_app/Widget/custom_comments_about_the_author.dart';
 import 'package:iqraa_app/Widget/custom_select_table_item.dart';
 import 'package:iqraa_app/Widget/list_item_custom_comments_author.dart';
 import 'package:iqraa_app/const/const.dart';

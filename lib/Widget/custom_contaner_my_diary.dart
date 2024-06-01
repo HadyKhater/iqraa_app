@@ -4,8 +4,8 @@ import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/const/const.dart';
 
 class CustomContanerMyDiary extends StatelessWidget {
-  const CustomContanerMyDiary({super.key});
-
+  const CustomContanerMyDiary({super.key, this.text});
+final String? text;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +17,7 @@ class CustomContanerMyDiary extends StatelessWidget {
                 ),
                 child: Center(
                   child: CustomText(
-                      title: 'مذكرات',
+                      title: text ?? 'مذكرات',
                       fontSize: 10.0.sp,
                       fontWeight: FontWeight.w600,
                       colorText: kPrimaryColor),
