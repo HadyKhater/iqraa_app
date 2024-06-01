@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_about_the_writer.dart';
 import 'package:iqraa_app/Widget/custom_app_bar_author_details.dart';
-import 'package:iqraa_app/Widget/custom_details.dart';
+import 'package:iqraa_app/Widget/custom_book.dart';
 import 'package:iqraa_app/Widget/custom_select_table_item.dart';
 import 'package:iqraa_app/const/const.dart';
 
@@ -26,9 +25,9 @@ class _AuthorDetailsState extends State<AuthorDetails> {
   Widget getSelectedContent(int index) {
     switch (selectedIndex) {
       case 0:
-        return Text('');
-      case 1:
         return const CustomAboutTheWriter();
+      case 1:
+        return const CustomBook();
       case 2:
         return Text('');
       default:
@@ -95,7 +94,7 @@ class _AuthorDetailsState extends State<AuthorDetails> {
                   ),
                 ],
               ),
-              SizedBox(height: 24.0.h),
+              SizedBox(height: 15.0.h),
               Expanded(
                 child: getSelectedContent(selectedIndex),
               ),

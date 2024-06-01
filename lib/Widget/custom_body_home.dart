@@ -5,7 +5,6 @@ import 'package:iqraa_app/views/author_details/author_details.dart';
 import 'package:iqraa_app/views/details_view/details_view.dart';
 import 'package:iqraa_app/views/my_diary/my_diary_view.dart';
 import 'package:iqraa_app/views/researchView/research_view.dart';
-
 import 'custom_app_bar_home.dart';
 import 'custom_book_authors.dart';
 import 'custom_bottom_sheet.dart';
@@ -33,9 +32,11 @@ class CustomBodyHom extends StatelessWidget {
                   return CustomBottomSheet(
                     onTap: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const ResearchView()));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ResearchView(),
+                        ),
+                      );
                     },
                   );
                 },
@@ -47,7 +48,6 @@ class CustomBodyHom extends StatelessWidget {
           ),
           //Card Discount
           const CustomCardDiscount(),
-
           SizedBox(
             height: 24.0.h,
           ),
