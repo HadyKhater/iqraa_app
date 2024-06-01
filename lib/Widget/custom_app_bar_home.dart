@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:iqraa_app/Widget/custom_Text.dart';
+import 'package:iqraa_app/views/Notification_view/notification_view.dart';
 import 'package:iqraa_app/views/references_view/references_view.dart';
 import 'package:iqraa_app/views/researchView/research_view.dart';
 
@@ -61,7 +62,14 @@ class CustomAppBarHome extends StatelessWidget {
         SizedBox(
           width: 16.0.w,
         ),
-        SvgPicture.asset('asstes/icons/Notifiaction.svg'),
+        GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const NotificationView()));
+            },
+            child: SvgPicture.asset('asstes/icons/Notifiaction.svg')),
         const SizedBox(
           width: 16.0,
         ),

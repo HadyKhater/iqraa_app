@@ -5,8 +5,8 @@ import 'package:iqraa_app/const/const.dart';
 import 'custom_Text.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
-
+  const CustomAppBar({super.key, required this.title});
+final String title;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -18,7 +18,7 @@ class CustomAppBar extends StatelessWidget {
           icon: const Icon(Icons.arrow_back_rounded),
         ),
         CustomText(
-          title: 'المرجعيات',
+          title: title,
           fontSize: 24.0.sp,
           fontWeight: FontWeight.w700,
           colorText: kSecondColor,

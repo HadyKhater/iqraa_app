@@ -1,10 +1,16 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:iqraa_app/Widget/custom_Text.dart';
 import 'package:iqraa_app/Widget/custom_app_bar.dart';
-import 'package:iqraa_app/Widget/list_custom_item_references.dart';
+import 'package:iqraa_app/Widget/custom_body_notification.dart';
+import 'package:iqraa_app/Widget/list_custom_item_notification.dart';
+import 'package:iqraa_app/const/const.dart';
 
-class ReferencesView extends StatelessWidget {
-  const ReferencesView({super.key});
+class NotificationView extends StatelessWidget {
+  const NotificationView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,18 +20,19 @@ class ReferencesView extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 24.0.w),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
                 height: 35.0.h,
               ),
-              //appBar
+              //AppBar
               const CustomAppBar(
-                title: 'المرجعيات',
+                title: 'الاشعارات',
               ),
               //body
-              const ListCustomItemReferences(),
+              const ListCustomItemNotification(),
               SizedBox(
-                height: 30.0.h,
+                height: 20.0.h,
               ),
             ],
           ),
